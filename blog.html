@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soko Cleaning Maids Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/Bio/IMG-Bio-logo.jpg" alt="Soko Cleaning Maids Logo"></a> 
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Blog</h1>
+  </section>
+
+  <!-- Testimonies -->
+  <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="images/Bio/IMG-05.jpg">
+        <h2>Our Certificates </h2>
+        <p>At Soko Cleaning Maids Ltd, we take training and compliance seriously — especially when it comes to
+          specialist cleaning work. Every member of our team is trained and certified before they're sent out on a
+          job, so you can trust that the work is done safely, correctly, and to a professional standard.</p>
+        <br>
+        <p>Our COSHH (Control of Substances Hazardous to Health) Awareness Training ensures our staff understand how
+          to store, handle, and use cleaning chemicals safely — protecting both your property and our team from any
+          risk of harm.</p>
+        <br>
+        <p>For biohazard and trauma cleaning, our team holds C1IC compliance certification, the UK standard for safe
+          handling of bodily fluids, infectious waste, and hazardous contamination. This means we can be trusted with
+          sensitive, high-risk jobs that require discretion, care, and strict adherence to health and safety
+          regulations.</p>
+        <br>
+        <p>We also train our staff in the safe handling and disposal of needles and sharps, which is essential for
+          jobs in public spaces, after-event cleanups, and any environment where hazardous waste may be present.
+          Ongoing training is part of how we maintain our high standards — if you have any questions about our
+          certifications or want to see documentation before booking a job, just get in touch.</p>
+
+         <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <!-- Giscus comments (backed by GitHub Discussions on tn57cube/Soko-Cleaning-Maids-Ltd) -->
+          <script src="https://giscus.app/client.js"
+            data-repo="https://tn57cube.github.io/soko-site-final/"
+            data-repo-id="R_kgDOTTllYg"
+            data-category="comments"
+            data-category-id="DIC_kwDOTTllYs4DCJd2"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+          </script>
+         </div>
+
+
+      </div>
+
+
+
+
+
+      <div class="blog-right">
+        <h3>Our Services</h3>
+        <div>
+          <span>Office Cleaning</span>
+        </div>
+        <div>
+          <span>After Party Cleaning</span>
+        </div>
+        <div>
+          <span>Monthly Cleaning Plans</span>
+        </div>
+        <div>
+          <span>One-Time Deep Cleaning</span>
+        </div>
+        <div>
+          <span>Biohazard &amp; Trauma Cleaning</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section class="footer">
+   <h4>Soko Cleaning Maids</h4>
+    <p> &copy; 2026 Soko Cleaning Maids Ltd &#124; All Rights Reserved</p>
+   <div class="icons">
+
+      <a href="mailto:info@sokocleaningmaids.co.uk">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.facebook.com/share/1FTECJPckg/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a href="https://wa.me/447359406440">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+     <a href="https://www.instagram.com/">
+         <i class="fa-brands fa-instagram"></i>
+     </a>
+    </div>
+    <p>Made by Soft-Mint | N-cube DevOps <i class="fa-regular fa-copyright"></i></p>
+  </section>
+
+
+  <!-- javaScript for Toggle Menu -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>

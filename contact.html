@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soko Cleaning Maids Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/Bio/IMG-Bio-logo.jpg"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- contact us -->
+
+  <section class="location">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286441.6493530291!2d-3.95281875!3d55.8830435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48886c018631825d%3A0x7846cb7176049353!2sNorth%20Lanarkshire%2C%20UK!5e0!3m2!1sen!2sza!4v1784903867760!5m2!1sen!2sza"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>
+            <h5>Located in North Lanarkshire </h5>
+            <p>We also service surrounding areas</p>
+          </span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <span>
+            <h5><a href="tel:+44754524711">+44 7545 24711</a></h5>
+            <p>Give us a call Mon-Sat, 09:00hrs- 16:30hrs</p>
+          </span>
+        </div>
+     
+        
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <span>
+            <h5>info@sokocleaningmaids.co.uk</h5>
+            <p>email us for a qoute</p>
+          </span>
+        </div>
+      </div>
+
+      <div class="contact-col">
+        <form action="https://formsubmit.co/info@sokocleaningmaids.co.uk" method="POST">
+          <input type="hidden" name="_subject" value="New enquiry - Soko Cleaning Maids website">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting Soko Cleaning Maids Ltd. We have received your message and will get back to you as soon as possible. Our team is available Monday to Saturday, 09:00-16:30. If your matter is urgent, please call us on +44 7545 24711.">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="contact.html?sent=true">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="text" name="name" placeholder="Enter your name" required>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <input type="text" name="subject" placeholder="Enter your subject" required>
+          <textarea rows="8" name="message" placeholder="Message" required minlength="10"></textarea>
+          <button type="submit" class="hero-btn green-btn">Send Message</button>
+        </form>
+        <p id="sentMsg" class="form-success-message">Thanks — your message has been sent!</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <section class="footer">
+   <h4>Soko Cleaning Maids</h4>
+    <p> &copy; 2026 Soko Cleaning Maids Ltd &#124; All Rights Reserved</p>
+    <div class="icons">
+      <a href="mailto:info@sokocleaningmaids.co.uk">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.facebook.com/share/1FTECJPckg/">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a href="https://wa.me/447359406440">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+     <a href="https://www.instagram.com/">
+         <i class="fa-brands fa-instagram"></i>
+     </a>
+    </div>
+    <p>Made by Soft-Mint | N-cube DevOps <i class="fa-regular fa-copyright"></i></p>
+  </section>
+
+
+  <script>
+    if (new URLSearchParams(window.location.search).get("sent") === "true") {
+      document.addEventListener("DOMContentLoaded", function () {
+        var msg = document.getElementById("sentMsg");
+        if (msg) msg.style.display = "block";
+      });
+    }
+  </script>
+
+  <!-- javaScript for Toggle Menu -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+
+</body>
+
+</html>
