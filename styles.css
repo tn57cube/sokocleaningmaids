@@ -622,3 +622,10 @@ h3 {
     linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(images/Bio/IMG-02.jpg);
 }
+
+/* .header.home-header {
+  min-height: 60vh;
+  background-image:
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/Bio/seamless-background-cleaning-service.1.png);
+} */
