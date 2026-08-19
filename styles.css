@@ -609,3 +609,16 @@ h3 {
   margin-top: 12px;
   font-weight: 500;
 }
+
+/* Homepage header override
+   (fixes: repeated .header rules further up this file were collapsing
+   the homepage header's height to 50vh and swapping its background image,
+   which pushed the centered hero text box up over the nav bar and
+   silently blocked nav link clicks on desktop) */
+
+.header.home-header {
+  min-height: 60vh;
+  background-image:
+    linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/Bio/IMG-02.jpg);
+}
