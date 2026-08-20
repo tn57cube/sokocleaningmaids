@@ -155,7 +155,7 @@
          <i class="fa-brands fa-instagram"></i>
      </a>
     </div>
-     <p>&copy; {new Date().getFullYear()} Soft-Mint | N-cube DevOps</p>
+     <p>Made by Soft-Mint | N-cube DevOps <i class="fa-regular fa-copyright"></i></p>
   </section>
 
 
@@ -170,6 +170,12 @@
       navLinks.style.right = "-200px";
     }
   </script>
+
+  <!-- Auto-updating copyright year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+ 
 
 
 </body>
